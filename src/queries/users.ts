@@ -8,7 +8,7 @@ export const users = createQueryKeys('users', {
     queryFn: () => api.getUser(userId),
   }),
   infinite: () => ({
-    queryKey: ['infinite'],
+    queryKey: ['infiniteScroll'],
     queryFn: ({ pageParam }: { pageParam: number }) => api.getUserList(pageParam),
   }),
 });
